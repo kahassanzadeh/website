@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>IMDb Front Page</title>
+
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+<div id="header">
+    <img id="logo" src="imdblogo.png" alt="logo">
+    <div id="search-bar">
+        <input id="film-name" type="text" placeholder="Search IMDB">
+        <button id="search" type="submit"></button>
+    </div>
+    <div id="API-key">
+        <label>
+            <input id="api-key-input" type="text" placeholder="API Key">
+        </label>
+    </div>
+    <div id="toggle">
+        <label class="switch">
+            <input type="checkbox">
+            <span class="slider round"></span>
+        </label>
+    </div>
+</div>
+
+<div id="main-container">
+    <div id="movie-card">
+        <img id="movie-card-image" src="test.jpg" >
+        <div id="movie-details">
+            <div id="head">
+                <h2 id="title">Inception</h2>
+                <div id="score"><p>8.8</p></div>
+            </div>
+            <p id="date-time">2010 time</p>
+            <div id="genre">
+                <span class="genre-items">Action</span>
+                <span class="genre-items">Sci-Fi</span>
+            </div>
+
+                <p id="movie-description">blah blah blah</p>
+            <div class="description-info">
+                <b >Director:</b> <span id="director">Nolan</span>
+            </div>
+            <div class="description-info">
+                <b>Writer:</b> <span id="writer">Nolan</span>            </div>
+            <div class="description-info">
+                <b>Stars:</b> <span id="stars">Dicaprio</span>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="similar-movies">
+        <h2 id="heading-similar">More Like This</h2>
+        <div id="similar-cards">
+            <div class="similar-card">
+                <img class="similar-img" src="test1.png">
+                <div class="sub-description-similar">
+                    <div class="title-similar">Wood</div>
+                    <p>Score: 8.8</p>
+                </div>
+            </div>
+            <div class="similar-card">
+                <img class="similar-img" src="test2.png">
+                <div class="sub-description-similar">
+                    <div class="title-similar">Walk Alone</div>
+                    <p>Score: 8.8</p>
+                </div>
+            </div>
+            <div class="similar-card">
+                <img class="similar-img" src="test3.jpg">
+                <div class="sub-description-similar">
+                    <div class="title-similar">Moonlight</div>
+                    <p>Score: 8.8</p>
+                </div>
+            </div>
+            <div class="similar-card">
+                <img class="similar-img" src="test4.png">
+                <div class="sub-description-similar">
+                    <div class="title-similar">The Joker</div>
+                    <p>Score: 8.8</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="jsfile.js"></script>
+</html>
